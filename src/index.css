@@ -1,0 +1,52 @@
+/* src/index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body.dark {
+  background: #181a20;
+  color: #f3f4f6;
+}
+body.dark .presentation-container {
+  background: #181a20;
+  color: #f3f4f6;
+}
+body.dark .hero-profile-unit {
+  background: #232634;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.25);
+}
+body.dark .program-card {
+  background: #232634;
+  color: #f3f4f6;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.18);
+}
+body.dark .testimonial {
+  background: #232634;
+  color: #f3f4f6;
+}
+body.dark .cta-btn, body.dark .sticky-cta {
+  background: #6366f1;
+  color: #fff;
+}
+body.dark .cta-btn:hover, body.dark .sticky-cta:hover {
+  background: #4338ca;
+}
+body.dark .topbar {
+  background: transparent;
+}
+body.dark .topbar-btn {
+  background: rgba(30,41,59,0.85);
+  color: #fff;
+}
+body.dark .topbar-btn:hover {
+  background: #334155;
+} 

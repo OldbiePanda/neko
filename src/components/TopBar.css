@@ -1,0 +1,29 @@
+.topbar {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  z-index: 2000;
+  display: flex;
+  gap: 0.5rem;
+}
+.topbar-btn {
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.topbar-btn:hover {
+  background: #e0e7ff;
+}
+body.dark .topbar-btn {
+  background: rgba(30,41,59,0.85);
+  color: #fff;
+}
+body.dark .topbar-btn:hover {
+  background: #334155;
+} 
