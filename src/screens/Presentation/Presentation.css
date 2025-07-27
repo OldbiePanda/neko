@@ -91,6 +91,7 @@ body.dark .programs-section {
   gap: 1.5rem;
   justify-content: center;
 }
+
 .program-card {
   background: #fff;
   border-radius: 16px;
@@ -138,12 +139,16 @@ body.dark .programs-section {
 }
 .transformations {
   text-align: center;
+  flex-direction: column;
+  justify-items: center;
 }
 .transformation-images {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   gap: 1rem;
-  justify-content: center;
   margin-top: 1rem;
+  
 }
 .transformation-images img {
   width: 120px;
@@ -172,6 +177,22 @@ body.dark .programs-section {
   background: #059669;
 }
 
+.transformation-beforeafter {
+  width: 800px;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .transformation-beforeafter {
+    width: 98vw;
+    max-width: 98vw;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-section {
     flex-direction: column;
@@ -198,4 +219,49 @@ body.dark .programs-section {
     flex-direction: column;
     align-items: center;
   }
+} 
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 98vw;
+  max-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-beforeafter-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  line-height: 1;
+}
+body.dark .modal-content {
+  background: #232634;
+}
+body.dark .modal-close {
+  color: #f3f4f6;
 } 
